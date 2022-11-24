@@ -13,20 +13,13 @@ pipeline {
     stages {
         stage("First step") {
             steps {
-<<<<<<<<< Temporary merge branch 1
                 sh 'ssh user@192.168.226.128 \'hostname\''
-=========
-                sh 'ssh root@192.168.226.128 \'hostname\''
->>>>>>>>> Temporary merge branch 2
             }
         }
         stage("Second step") {
             steps {
-<<<<<<<<< Temporary merge branch 1
                 sh 'ssh user@192.168.226.128 \'uptime\''
-=========
-                sh 'ssh root@192.168.226.128 \'uptime\''
->>>>>>>>> Temporary merge branch 2
+
             }
         }
     }
