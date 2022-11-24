@@ -1,3 +1,6 @@
+#!groovy
+// Check user-virtual-machine properties
+properties([disableConcurrentBuilds()])
 
 pipeline {
     agent { 
