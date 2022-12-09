@@ -18,16 +18,8 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('docker/toolbox') {
-                	sh 'docker build -t user/toolbox:latest . '
-                }
-            }
-        }
-        stage("docker push") {
-            steps {
-                echo " ============== start pushing image =================="
-                sh '''
-                docker push user/toolbox:latest
-                '''
+                	sh 'docker build . '
+  
             }
         }
     }
