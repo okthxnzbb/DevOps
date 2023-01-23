@@ -5,8 +5,8 @@ properties([disableConcurrentBuilds()])
 pipeline {
     agent {
         dockerfile true
-        label 'master'
-         triggers { pollSCM('* * * * *') }
+       // label 'master'
+        // triggers { pollSCM('* * * * *') }
         }
     options {
         buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
